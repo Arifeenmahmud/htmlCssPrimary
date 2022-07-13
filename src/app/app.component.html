@@ -1,0 +1,35 @@
+<style>
+  .center {
+    text-align: center;
+    text-decoration: none;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    /* display: inline; */
+    /* list-style: none; */
+
+  }
+</style>
+
+
+<div class="content" role="main">
+  <!-- <app-root></app-root> -->
+  <br />
+  <span>
+    <h1>{{ title }} app is running!</h1>
+  </span>
+  <label for="input">Input: {{details}} </label>
+
+  <input type="text" id="input" value="{{details}}" />
+</div>
+<div class="center">
+  <app-authors></app-authors>
+</div>
+<app-favorite></app-favorite>
+
+<app-course></app-course>
+
+<app-xyz></app-xyz>
+<courses></courses>
+<router-outlet></router-outlet>

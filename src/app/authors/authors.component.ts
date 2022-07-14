@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./authors.component.css']
 })
 export class AuthorsComponent implements OnInit {
-  authors;
+    authors = [{ name: 'John', age: 30 }, { name: 'Jane', age: 25 }];
 
   constructor(service: AuthorsService) {
-    this.authors = service.getAuthors();
+    // this.authors = service.getAuthors();
    }
 
   ngOnInit(): void {

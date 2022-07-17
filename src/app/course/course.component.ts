@@ -10,6 +10,17 @@ export class CourseComponent implements OnInit {
   
   ngOnInit(): void {
   }
+
+  courses : any;
+
+  loadCourses() {
+    this.courses= [
+      { id: 1, name: 'course1' },
+      { id: 2, name: 'course2' },
+      { id: 3, name: 'course3' }
+  
+    ];
+  }
   
   serverCreationStatus = 'no server was created!';
   serverName = 'TestServer Write something to change the this text';
@@ -23,8 +34,6 @@ export class CourseComponent implements OnInit {
     onUpdateServerName(event: any){
       this.serverName = 'Server name was changed to ' + event.target.value;
       // this.serverName = event.target.value;
-      
-
     }
 
 }

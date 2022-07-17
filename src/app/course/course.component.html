@@ -52,6 +52,13 @@
 
 <p>course works!</p>
 
+<button (click)="loadCourses()">Load Course</button>
+<ul>
+    <li *ngFor="let course of courses">
+        {{course.name | uppercase}}
+    </li>
+</ul>
+
 <label>Course Name</label> <br>
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)">
 <p>{{serverName}}</p> -->

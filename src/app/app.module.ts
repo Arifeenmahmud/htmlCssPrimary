@@ -11,6 +11,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ZippyComponent } from './zippy/zippy.component';
     AuthorsComponent,
     FavoriteComponent,
     InputFormatDirective,
-    ZippyComponent
+    ZippyComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

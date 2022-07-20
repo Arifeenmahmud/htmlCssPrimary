@@ -11,5 +11,17 @@ export class FavoriteComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onClick() {
+    alert('You have clicked the button!');
+  }
+  task = {
+    title: 'Review applications',
+    assignee: {
+      name: 'John'
+    }
+  }
+  
+  title = 'Favorite';
+  canSave = true;
 
 }

@@ -1,3 +1,4 @@
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthorsService } from './authors.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { FormsComponent } from './forms/forms.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,15 @@ import { FormsComponent } from './forms/forms.component';
     FavoriteComponent,
     InputFormatDirective,
     ZippyComponent,
-    FormsComponent
+    FormsComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
+
   ],
   providers: [
     // CoursesService

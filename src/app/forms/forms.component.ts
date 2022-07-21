@@ -1,3 +1,4 @@
+import { FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,7 @@ export class FormsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  color = new FormControl('');
 
 }
